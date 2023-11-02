@@ -34,16 +34,18 @@ public class InterfazGrafica extends JFrame implements ActionListener{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 459, 300);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(188, 186, 201));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		etiTexto = new JLabel("Juan Pablo");
-		etiTexto.setBackground(new Color(255, 255, 255));
+		etiTexto.setBackground(new Color(188, 186, 201));
 		etiTexto.setForeground(new Color(64, 0, 64));
 		etiTexto.setFont(new Font("Sitka Small", Font.BOLD, 20));
 		etiTexto.setBounds(155, 11, 141, 34);
+		etiTexto.setOpaque(true);
 		contentPane.add(etiTexto);
 		
 		btnAzul = new JButton("Azul");
